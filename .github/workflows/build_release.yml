@@ -16,7 +16,7 @@ jobs:
           repository: DokiTeam/Doki
           ref: base
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Set up JDK 🚀
         uses: actions/setup-java@v4
@@ -97,4 +97,4 @@ jobs:
           files: release.apk
           fail_on_unmatched_files: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
